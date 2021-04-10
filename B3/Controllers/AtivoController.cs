@@ -16,6 +16,7 @@ namespace B3.Controllers
 
         private readonly ILogger<AtivoController> _logger;
         private readonly IAtivoService _ativo;
+
         public AtivoController(ILogger<AtivoController> logger, IAtivoService ativo)
         {
             _logger = logger;
@@ -41,7 +42,7 @@ namespace B3.Controllers
         }
 
         [HttpPut]
-        public IActionResult produtoUpdate([FromBody] Ativo novoAtivo)
+        public IActionResult ativoUpdate([FromBody] Ativo novoAtivo)
         {
             return Ok(_ativo.AtualizarAtivo(novoAtivo));
         }

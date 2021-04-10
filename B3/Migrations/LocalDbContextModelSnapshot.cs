@@ -31,9 +31,6 @@ namespace B3.Migrations
                     b.Property<string>("empresa")
                         .HasColumnType("text");
 
-                    b.Property<int>("preco")
-                        .HasColumnType("integer");
-
                     b.Property<int>("valor")
                         .HasColumnType("integer");
 

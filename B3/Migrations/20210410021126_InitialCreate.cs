@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace B3.Migrations
 {
-    public partial class CriandoatabelaAtivo : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,8 +15,7 @@ namespace B3.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     empresa = table.Column<string>(type: "text", nullable: true),
                     codigoB3 = table.Column<string>(type: "text", nullable: true),
-                    valor = table.Column<int>(type: "integer", nullable: false),
-                    preco = table.Column<int>(type: "integer", nullable: false)
+                    valor = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {

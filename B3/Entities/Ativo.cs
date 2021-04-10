@@ -14,7 +14,6 @@ namespace B3.Entities
         public string codigoB3 { get; set; }
         public int valor { get; set; }
  
-        public int preco { get; set; }
     
     }
 }

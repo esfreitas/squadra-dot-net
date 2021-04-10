@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace B3.Migrations
 {
     [DbContext(typeof(LocalDbContext))]
-    [Migration("20210409123859_Criando a tabela Ativo")]
-    partial class CriandoatabelaAtivo
+    [Migration("20210410021126_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,9 +32,6 @@ namespace B3.Migrations
 
                     b.Property<string>("empresa")
                         .HasColumnType("text");
-
-                    b.Property<int>("preco")
-                        .HasColumnType("integer");
 
                     b.Property<int>("valor")
                         .HasColumnType("integer");
