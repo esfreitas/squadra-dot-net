@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\B3",
+    "\\B3\\DTO",
+    "\\B3\\DTO\\Ativo",
+    "\\B3\\DTO\\Ativo\\AdicionarAtivo",
+    "\\B3\\Entities",
+    "\\B3\\obj",
+    "\\B3\\obj\\Debug",
+    "\\B3\\UseCase",
+    "\\B3\\wwwroot"
+  ],
+  "SelectedNode": "\\B3\\B3.csproj",
+  "PreviewInSolutionExplorer": false
+}
