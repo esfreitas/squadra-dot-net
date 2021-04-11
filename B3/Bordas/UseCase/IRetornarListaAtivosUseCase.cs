@@ -8,6 +8,6 @@ namespace B3.UseCase
 {
     public interface IRetornarListaAtivosUseCase
     {
-        RemoverAtivoResponse Executar(RetornarListaAtivosRequest request);
+        RetornarListaAtivosResponse Executar(RetornarListaAtivosRequest request);
     }
 }

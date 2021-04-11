@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace B3.DTO.Ativo.RetornarListaAtivos
 {
-    public class RemoverAtivoResponse
+    public class RetornarListaAtivosResponse
     {
     }
 }

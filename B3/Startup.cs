@@ -1,5 +1,10 @@
+using B3.Adapter;
+using B3.Bordas.Adapter;
+using B3.Bordas.Repositorio;
 using B3.Context;
+using B3.Repositorios;
 using B3.Services;
+using B3.UseCase;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,7 +36,18 @@ namespace B3
 
             services.AddScoped<IAtivoService, AtivoService>();
 
-           services.AddRazorPages();
+            services.AddScoped<IAdicionarAtivoUseCase, AdicionarAtivoUseCase>();
+            services.AddScoped<IAtualizarAtivoUseCase, AtualizarAtivoUseCase>();
+            services.AddScoped<IRemoverAtivoUseCase, RemoverAtivoUseCase>();
+            services.AddScoped<IRetornarAtivoPorIdUseCase, RetornarAtivoPorIdUseCase>();
+            services.AddScoped<IRetornarListaAtivosUseCase, RetornarListaAtivosUseCase>();
+
+            services.AddScoped<IRepositorioAtivos, RepositorioAtivos>();
+            services.AddScoped<IAdicionarAtivoAdapter, AdicionarAtivoAdapter>();
+            
+
+
+            services.AddRazorPages();
            
             services.AddControllers();
         }

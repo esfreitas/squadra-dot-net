@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace B3.DTO.Ativo.RetornarAtivoPorId
 {
-    public class RemoverAtivoRequest
+    public class RetornarAtivoPorIdRequest
     {
     }
 }
