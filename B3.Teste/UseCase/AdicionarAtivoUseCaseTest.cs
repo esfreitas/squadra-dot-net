@@ -34,7 +34,7 @@ namespace B3.Teste.UseCase
         [Fact]
         public void Ativo_AdicionarAtivo_QuandoRetornarSucesso()
         {
-            //Arrange
+            //Arrange Criar as variaveis
             var request = new AdicionarAtivoRequestBuilder().Build();
             var response = new AdicionarAtivoResponse();
             var ativo = new Ativo();
@@ -42,10 +42,10 @@ namespace B3.Teste.UseCase
             _repositorioAtivos.Setup(repositorio => repositorio.Add(ativo)).Returns(ativoId);
             _adicionarAtivoAdapter.Setup(adapter => adapter.converterRequestParaAtivo(request)).Returns(ativo);
 
-            //Act
+            //Act chamar as funções
             var result = _usecase.Executar(request);
 
-            //Assert
+            //Assert regras dos testes
             response.Should().BeEquivalentTo(result);
 
         }
@@ -71,10 +71,10 @@ namespace B3.Teste.UseCase
         {
             //Arrange
             var request = new AdicionarAtivoRequestBuilder().Build();
-            var respose = new AdicionarAtivoResponse();
+            var response = new AdicionarAtivoResponse();
             var ativo = new Ativo();
             ativo.id = 1;
-            respose.msg = "Erro ao adicionar o produto";
+            response.msg = "Erro ao adicionar o produto";
             _adicionarAtivoAdapter.Setup(adapter => adapter.converterRequestParaAtivo(request)).Returns(ativo);
             _repositorioAtivos.Setup(repositorio => repositorio.Add(ativo)).Throws(new Exception());
 
@@ -82,7 +82,7 @@ namespace B3.Teste.UseCase
             var result = _usecase.Executar(request);
 
             //Assert
-            respose.Should().BeEquivalentTo(result);
+            response.Should().BeEquivalentTo(result);
         }
 
     }
