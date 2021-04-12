@@ -11,10 +11,9 @@ namespace B3.Entities
         [Key]
         public int id { get; set; }
         public string empresa { get; set; }
-        public string codigoB3 { get; set; }
-        public int valor { get; set; }
- 
+        public string codigob3 { get; set; }
         public int preco { get; set; }
-    
+        public string tipo { get; set; }
+
     }
 }

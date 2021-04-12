@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elton\\source\\repos\\B3\\B3\\B3.csproj": {}
+    "C:\\Users\\elton\\source\\repos\\squadra-dot-net\\B3\\B3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elton\\source\\repos\\B3\\B3\\B3.csproj": {
+    "C:\\Users\\elton\\source\\repos\\squadra-dot-net\\B3\\B3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\B3\\B3\\B3.csproj",
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\squadra-dot-net\\B3\\B3.csproj",
         "projectName": "B3",
-        "projectPath": "C:\\Users\\elton\\source\\repos\\B3\\B3\\B3.csproj",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\squadra-dot-net\\B3\\B3.csproj",
         "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elton\\source\\repos\\B3\\B3\\obj\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\squadra-dot-net\\B3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -2,15 +2,17 @@
 using B3.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace B3.Migrations
 {
     [DbContext(typeof(LocalDbContext))]
-    partial class LocalDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210412131937_Inserindo tipo na tabela")]
+    partial class Inserindotiponatabela
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,7 +27,7 @@ namespace B3.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("codigob3")
+                    b.Property<string>("codigoB3")
                         .HasColumnType("text");
 
                     b.Property<string>("empresa")
@@ -36,6 +38,9 @@ namespace B3.Migrations
 
                     b.Property<string>("tipo")
                         .HasColumnType("text");
+
+                    b.Property<int>("valor")
+                        .HasColumnType("integer");
 
                     b.HasKey("id");
 
