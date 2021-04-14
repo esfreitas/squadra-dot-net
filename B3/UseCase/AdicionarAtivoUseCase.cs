@@ -26,9 +26,9 @@ namespace B3.UseCase
 
             try
             {
-                if (request.empresa.Length < 20)
+                if (request.empresa.Length > 20)
                 {
-                    response.msg = "Erro ao adicionar o Ativo";
+                    response.msg = "Erro ao adicionar o Ativo, nome da empresa precisa ser menor que 20 caracteres";
                     return response;
                 }
 
