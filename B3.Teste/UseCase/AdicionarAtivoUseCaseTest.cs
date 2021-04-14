@@ -51,13 +51,13 @@ namespace B3.Teste.UseCase
         }
 
         [Fact]
-        public void Ativo_AdicionarAtivo_QuantoEmpresaMenorVinte()
+        public void Ativo_AdicionarAtivo_QuantoEmpresaMaiorVinteeCinco()
         {
             //Arrange
-            var request = new AdicionarAtivoRequestBuilder().withEmpresaLength(10).Build();
+            var request = new AdicionarAtivoRequestBuilder().withEmpresaLength(26).Build();
             var respose = new AdicionarAtivoResponse();
          
-            respose.msg = "Erro ao adicionar o Ativo";
+            respose.msg = "Erro ao adicionar o Ativo nome da empresa tem que ser menor que 25 caracteres";
 
             //Act
             var result = _usecase.Executar(request);
